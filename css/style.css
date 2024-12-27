@@ -1,0 +1,44 @@
+/* 
+Design System 
+---- 01 Typography System
+    Font sizes (px): 10, 12, 14, 16, 20, 24, 30, 36, 44, 48, 52, 62, 64, 74, 86, 96, 98, 110, 120, 132, 144 
+
+    Font weights:
+    default: 400
+    
+    Line heights:
+    Defalut: 1
+
+    Spacing System (px): 2, 4, 8, 12, 16, 24, 32, 48, 64, 80, 96, 128
+
+---- 02 Color System
+    Primary: #007bff
+
+    Tints: 
+    #329bff, #66bfff, #99d3ff, #cce7ff, #e6f3ff
+
+    shades: 
+    #005cbf, #00499c, #003779, #002456, #001133
+
+    Accents: 
+    #28a745, #218838, #1e7e34, #1c7430, #17672b
+
+    Greys:
+    #555
+    #343a40
+
+*/
+
+/* Global reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+}
