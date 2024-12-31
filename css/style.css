@@ -81,6 +81,7 @@ Design System
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
    
 }
 
@@ -200,8 +201,8 @@ h3{
 
 .iphone-header-time{
     font-family: sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
+    font-weight: 600;
+    font-size: 1.6rem;
 }
 
 .iphone-header-icons{
