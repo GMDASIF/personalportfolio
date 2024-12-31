@@ -147,14 +147,14 @@
     }
 
     .container {
-        width: 100%;
+        min-width: 100%;
         padding: 0 1.6rem; 
     }
 
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 12 columns */
-        grid-template-rows: repeat(9, 1fr); /*5 rows*/
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: min-content;
         gap: 20px; 
         grid-auto-rows: min-content;
       }
@@ -162,43 +162,151 @@
      .certification-box{
         grid-column: span 4;
         grid-row: 1;
+        
      }
+
+     .certificate-container{
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 2.4rem;
+        row-gap: 2.4rem;
+     }
+
+     .certificate{
+        width: 100px;
+     }
+
+    
      
      .hero-box{
         grid-column: span 4;
-        grid-row: 2/4
+        grid-row: 2;
+        padding: 1.2rem 2rem;
      }
+
+     .hero-container{
+        flex-direction: column;
+     }
+
+     .hero-img {
+        min-width: 218px;
+        max-width: 300px;
+        width: 100%;
+        min-height: 225px;
+        
+    }
+
+    .hero-btn {
+        justify-content: center;
+    }
 
 
      .honor-box{
-        grid-column: span 2;
-        grid-row: 4;
+        grid-column: span 4;
+        grid-row: 3;
+        padding-bottom: 2.4rem;
+        min-width: 25rem;
+        max-width: 35rem;
+        width: 100%;
+        margin: 0 auto;
      }
 
      .solution-box{
         grid-column: span 4;
-        grid-row: 5/7;
+        grid-row: 4;
      }
+
+     .solution-box-sticker{
+        display: none;
+     }
+
+     .solution-item {
+        margin-bottom: 2rem;
+    }
+
+    .solution-box h3{
+        margin-top: 0;
+    }
 
      .skills-box{
         grid-column: span 4;
-        grid-row: 7;
+        grid-row: 5;
      }
 
-     .interest-box{
-        grid-column: span 2;
-        grid-row: span 2;
-        padding:2.4rem;
+    .skill-container{
+        flex-wrap:wrap;
+        justify-content: center;
+        gap: 2rem;
     }
+
+     
 
     .load-balancer-box{
         padding:1.2rem;
         grid-column: span 2;
+        grid-row: 6 ;
+    }
+
+    .hobby {
+        min-width: auto;
     }
 
     .learning-box{
         padding:1.2rem;
         grid-column: span 2;
+        grid-row: 6 ;
+    }
+
+    .interest-box{
+        grid-column: span 4;
+        grid-row: 7 ;
+        padding:2.4rem;
+    }
+
+    .interest-items {
+        flex-wrap: wrap;
+        margin: 2rem auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .interest-item {
+        align-items: center;
+    }
+
+    #breakline{
+        display: none;
+    }
+
+}
+
+
+@media  (max-width:450px) {
+     
+    .load-balancer-box{
+        padding: 1.2rem;
+        grid-column: span 4;
+        grid-row: 6;
+        max-width: 350px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .hobby {
+        min-width: auto;
+    }
+
+    .learning-box{
+        padding: 1.2rem;
+        grid-column: span 4;
+        grid-row: 7;
+        max-width: 350px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .interest-box{
+        grid-row: 8 ;
     }
 
 }
