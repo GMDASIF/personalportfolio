@@ -1,0 +1,204 @@
+@media (max-width: 1350px) {
+
+    html{
+        font-size: 9px;
+    }
+
+    .honors{
+        padding-top:0 ;
+    }
+
+    /* .learning-box{
+        padding:0rem;
+    }
+
+    .load-balancer-box{
+        padding:0rem;
+       
+    } */
+}
+
+
+
+
+@media  (max-width:1239px) {
+
+    html{
+        font-size: 9px;
+    }
+
+    .container {
+        width: 840px;
+        max-width: 840px;
+        min-width: 840px;
+        padding: 0; 
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr); /* 12 columns */
+        grid-template-rows: repeat(8, 1fr); /*5 rows*/
+        gap: 20px; 
+        grid-auto-rows: min-content;
+      }
+
+    
+
+    .certification-box{
+        grid-column: 1 / 6;
+        grid-row: 1;
+    }
+
+    .honor-box{
+        grid-column: 6 / 9;
+        grid-row: 1;
+    }
+
+    .hero-box{
+        grid-column: span 8;
+        grid-row: 2/4;
+        padding: 1.2rem;
+    }
+
+    .solution-box{
+        grid-row:4/6;
+        grid-column: span 8;
+    }
+
+    .solution-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .solution-items{
+        
+        width: fit-content;
+        margin: 0;
+        
+    }
+
+    .solution-item p{
+        font-size:1.6rem ;
+    }
+
+    .solution-item img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .solution-box-sticker{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 0;
+    }
+
+    .solution-hr{
+        border: 0.3rem solid black;
+    }
+
+    .honors{
+        padding: 0;
+    }
+}
+
+@media  (max-width:904px) {
+
+     html{
+        font-size: 8px;
+    }
+
+    .hobbies{
+        padding: 0 1.2rem;
+    }
+
+    .hobby{
+        min-width: 9rem;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 800px;
+        min-width: 600px;
+        padding: 0 3.2rem;
+    }
+
+   
+    .certification-box img{
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .hero-img {
+        min-width: 218px;
+        height: 200px;
+    }
+
+
+}
+
+
+@media  (max-width:599px) {
+
+    html{
+        font-size: 8px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 1.6rem; 
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 12 columns */
+        grid-template-rows: repeat(9, 1fr); /*5 rows*/
+        gap: 20px; 
+        grid-auto-rows: min-content;
+      }
+
+     .certification-box{
+        grid-column: span 4;
+        grid-row: 1;
+     }
+     
+     .hero-box{
+        grid-column: span 4;
+        grid-row: 2/4
+     }
+
+
+     .honor-box{
+        grid-column: span 2;
+        grid-row: 4;
+     }
+
+     .solution-box{
+        grid-column: span 4;
+        grid-row: 5/7;
+     }
+
+     .skills-box{
+        grid-column: span 4;
+        grid-row: 7;
+     }
+
+     .interest-box{
+        grid-column: span 2;
+        grid-row: span 2;
+        padding:2.4rem;
+    }
+
+    .load-balancer-box{
+        padding:1.2rem;
+        grid-column: span 2;
+    }
+
+    .learning-box{
+        padding:1.2rem;
+        grid-column: span 2;
+    }
+
+}
